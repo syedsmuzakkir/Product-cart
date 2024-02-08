@@ -19,7 +19,7 @@ export default function Home() {
       
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
 
-      <div className=" bg-slate-200 p-2 border rounded-3xl cursor-pointer">
+      <div className=" bg-slate-200 p-2 border rounded-3xl cursor-pointer m-3">
         <Link href={'./components/Cart'}>
          Items: {cartProducts.length}
         </Link>

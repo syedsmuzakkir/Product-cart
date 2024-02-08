@@ -41,7 +41,7 @@ const Product = () => {
 
     const  Cards = products.map((product)=>{
         return(
-            <div key={product.id} className='container flex flex-col justify-center items-center'> 
+            <div key={product.id} className='container flex flex-col justify-center items-center leading-9 shadow-xl border rounded-lg p-2 w-full'> 
                 <h2>{product.title}</h2>
                 <img className='w-[200px] h-[200px]' src={product.image}/>
                  <h3> &#x20B9; {product.price} </h3>

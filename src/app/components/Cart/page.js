@@ -19,7 +19,7 @@ const dispatch = useDispatch()
     return (
       <div
         key={prod.id}
-        className="container flex flex-col justify-center items-center"
+        className="container flex flex-col justify-center items-center shadow-lg m-2 border rounded-2xl gap-2 "
       >
         <h2>{prod.title}</h2>
         <img className="w-[200px] h-[200px]" src={prod.image} />
@@ -36,12 +36,14 @@ const dispatch = useDispatch()
   });
 
   return (
-    <div className="tex-center flex flex-col items-center justify-center">
+    <div className="tex-center flex  flex-col items-center justify-center leading-8">
       <h2>Your Product Cart Items</h2>
 
       <Link href={'../../'}  className="bg-slate-500 text-white p-2" >Back</Link>
-
-      {Cards}
+<div className="grid sm:grid-cols-2 md:grid-cols-3  xl:grid-cols-4 justify-center items-center" >
+{Cards}
+</div>
+      
     </div>
   );
 };
