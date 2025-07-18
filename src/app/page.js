@@ -8,6 +8,7 @@ import Cart from "./components/Cart";
 
 import store from "./store/store";
 import { Provider, UseSelector, useSelector } from "react-redux";
+import EcommerceApp from "./components/EcommerceApp";
 export default function Home() {
   const cartProducts = useSelector((state)=>state.cart);
 
@@ -17,17 +18,21 @@ export default function Home() {
 
     // <Provider store={store}>
       
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    // <main className="flex min-h-screen flex-col items-center justify-between p-24">
 
-      <div className=" bg-slate-200 p-2 border rounded-3xl cursor-pointer m-3">
-        <Link href={'./components/Cart'}>
-         Items: {cartProducts.length}
-        </Link>
-      </div>
-     <Product/>
+    //   <div className=" bg-slate-200 p-2 border rounded-3xl cursor-pointer m-3">
+    //     <Link href={'./components/Cart'}>
+    //      Items: {cartProducts.length}
+    //     </Link>
+    //   </div>
+    //  <Product/>
 
-    </main>
+    // </main>
   //  </Provider>
+
+  <div>
+    <EcommerceApp/>
+  </div>
 
   );
 }
